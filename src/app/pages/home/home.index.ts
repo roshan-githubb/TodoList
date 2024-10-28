@@ -28,7 +28,7 @@ export default class extends mainViewClass {
         <div class="header">
           <div class="header-logo">
             <img src="./images/freeschema-logo.png" alt="freeschema logo">
-            <h1>Freeschema Framework</h1>
+            <h1>Todo</h1>
           </div>
           <div class="header-link">
             <p>View <a href="https://github.com/Mentor-Friends/Freeschema-Frontend" target="_blank">github</a> for more</p>
@@ -36,9 +36,9 @@ export default class extends mainViewClass {
         </div>
 
         <main class="main">
-          <h1>Freeschema</h1>
+          <h1>Todo</h1>
           <p class="heading-text">${headingText}</p>
-          <p class="welcome-text">Welcome to freeSCHEMA, a powerful platform designed to simplify data management and software development, reducing development time by 50-75%. Whether you are a front-end developer or a full-stack developer.</p>
+          <p class="welcome-text"><a href='/todo'>Go to Todo</a></p>
           <!-- <button onclick="showAlert()">Show alert</button> -->
           <div class="btn-group">
             ${buttonsHTML}
@@ -52,7 +52,7 @@ export default class extends mainViewClass {
             <p>Topics, references, and how-to's</p>
           </div>
           <div>
-            <h3><router-link href="/phonebook">Example: Phonebook App</router-link></h3>
+            <h3><router-link href="/todo">Example: Todo App</router-link></h3>
             <p>Get Started with Freeschema Frontend</p>
           </div>
           <div>

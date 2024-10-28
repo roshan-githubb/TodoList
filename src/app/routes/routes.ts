@@ -3,6 +3,9 @@ import { list } from "../pages/example/list.example.ts";
 import { phonebook } from "../pages/example/wrapper.example.ts";
 import homeIndex from "../pages/home/home.index.ts";
 import noPageFoundIndex from "../pages/noPageFound/noPageFound.index.ts";
+import { CreateTodo } from "../pages/todo/create.todo.ts";
+import { TodoList } from "../pages/todo/list.todo.ts";
+import { TodoWrapper } from "../pages/todo/wrapper.todo.ts";
 import { login } from "../pages/user/login.example.ts";
 import { logout } from "../pages/user/logout.example.ts";
 import { register } from "../pages/user/register.example.ts";
@@ -51,19 +54,37 @@ const routes: RouteParams[] = [
     path: "/example",
     linkLabel: "Example",
     content: create,
-    isAuthenticated: true
+    isAuthenticated: true,
   },
   {
     path: "/phonebook",
     linkLabel: "Phonebook",
     content: phonebook,
-    isAuthenticated: true
+    isAuthenticated: true,
   },
   {
     path: "/example-list",
     linkLabel: "Example",
     content: list,
-    isAuthenticated: true
+    isAuthenticated: true,
+  },
+  {
+    path: "/create",
+    linkLabel: "CreateTodo",
+    content: CreateTodo,
+    isAuthenticated: true,
+  },
+  {
+    path: "/todo",
+    linkLabel: "TodoWrapper",
+    content: TodoWrapper,
+    isAuthenticated: true,
+  },
+  {
+    path: "/todolist",
+    linkLabel: "TodoList",
+    content: TodoList,
+    isAuthenticated: true,
   },
   {
     path: "/404",

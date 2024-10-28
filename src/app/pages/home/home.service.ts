@@ -1,7 +1,7 @@
 import { getLocalStorageData } from "../user/login.service";
 
 export async function getHeadingText() {
-  return "Freeschema Frontend is the Semantic Concept Connection System framework";
+  return "Welcome to Todo, an app where you can create, list, update and delete todos.";
 }
 
 export async function showAlert() {
